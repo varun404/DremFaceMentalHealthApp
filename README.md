@@ -39,11 +39,11 @@ Each state has:
 
 ## Core Managers
 In addition to state-specific managers, the following system-wide managers orchestrate key functionality:
-**AppManager** – Central control unit; tracks app state, session status, and lifecycle events.
-**UIManager** – Activates UI based on app state.
-**TTSManager** – Manages Text-to-Speech responses.
-**STTManager** – Handles Speech-to-Text for voice input.
-**ChatGPTManager** – Sends and receives data from the OpenAI GPT API.
+1. **AppManager** – Central control unit; tracks app state, session status, and lifecycle events.
+2. **UIManager** – Activates UI based on app state.
+3. **TTSManager** – Manages Text-to-Speech responses.
+4. **STTManager** – Handles Speech-to-Text for voice input.
+5. **ChatGPTManager** – Sends and receives data from the OpenAI GPT API.
 
 All requests, responses, and feature interactions are routed through these managers.
 
