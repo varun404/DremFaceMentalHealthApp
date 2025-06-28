@@ -31,19 +31,20 @@ Each state controls what is displayed on screen:
 2. **Home** – Landing screen of the app.
 3. **Activity** – Interactive and assessment-based experiences.
 4. **Chat** – Conversational interface powered by GPT.
-5. **Analytics** – Displays user activity insights.
+5. **Analytics** – Tracks user activity insights.
 
 Each state has:
-1. A dedicated "Manager" script to handle core logic and backend flow.
-2. A matching "UIHandler" that manages frontend rendering and updates.
+1. A dedicated (except None, Home) **"Manager"** script to handle core logic and backend flow.
+2. A matching **"UIHandler"** that manages frontend rendering and updates.
 
-## Core Managers
+## Other Core Managers
 In addition to state-specific managers, the following system-wide managers orchestrate key functionality:
 1. **AppManager** – Central control unit; tracks app state, session status, and lifecycle events.
 2. **UIManager** – Activates UI based on app state.
 3. **TTSManager** – Manages Text-to-Speech responses.
 4. **STTManager** – Handles Speech-to-Text for voice input.
 5. **ChatGPTManager** – Sends and receives data from the OpenAI GPT API.
+ 
 
 All requests, responses, and feature interactions are routed through these managers.
 
